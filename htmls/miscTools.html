@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Other Tools</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="css/basic.css" />
+
+    <style>
+        .selectArea {cursor: pointer;}
+
+        #whipFinish1 {position: absolute; top: 190px; left: 560px; width: 180px; height: 32px;}
+        #whipFinish2 {position: absolute; top: 69px; left: 494px; width: 40px; height: 98px;}
+        #whipFinish3 {position: absolute; top: 150px; left: 530px; width: 36px; height: 40px;}
+
+        #hairPacker1 {position: absolute; top: 89px; left: 544px; width: 50px; height: 58px;}
+
+        #bodkin1 {position: absolute; top: 120px; left: 599px; width: 31px; height: 61px;}
+        #bodkin2 {position: absolute; top: 59px; left: 584px; width: 31px; height: 61px;}
+
+        #tweezers1 {position: absolute; top: 73px; left: 619px; width: 25px; height: 66px;}
+
+        #pliers1 {position: absolute; top: 41px; left: 642px; width: 102px; height: 44px;}
+        #pliers2 {position: absolute; top: 82px; left: 665px; width: 25px; height: 100px;}
+
+        #hackleGauge1 {position: absolute; top: 135px; left: 695px; width: 58px; height: 45px;}
+        #hackleGauge2 {position: absolute; top: 93px; left: 720px; width: 49px; height: 43px;}
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('.whipFinish').click(function () {
+                $('#description').fadeOut('slow', function () {
+                    $('#description').text("The whip-finish tools are used for tying a secure knot at the head of the fly.");
+                    $('#description').fadeIn('slow');
+                });
+            });
+
+            $('.hairPacker').click(function () {
+                $('#description').fadeOut('slow', function () {
+                    $('#description').text("The hair packer tool is used for building dense spun-deer hair bodies.");
+                    $('#description').fadeIn('slow');
+                });
+            });
+
+            $('.bodkin').click(function () {
+                $('#description').fadeOut('slow', function () {
+                    $('#description').text("The Bodkin or Dubbing Needle is used for combing out underfur, applying head cement, and many other tasks.");
+                    $('#description').fadeIn('slow');
+                });
+            });
+
+            $('.tweezers').click(function () {
+                $('#description').fadeOut('slow', function () {
+                    $('#description').text("Tweezers are used for holding small materials and other tasks.");
+                    $('#description').fadeIn('slow');
+                });
+            });
+
+            $('.pliers').click(function () {
+                $('#description').fadeOut('slow', function () {
+                    $('#description').text("Small pliers with flat jaws are used for safely mashing down barbs.");
+                    $('#description').fadeIn('slow');
+                });
+            });
+
+            $('.hackleGauge').click(function () {
+                $('#description').fadeOut('slow', function () {
+                    $('#description').text("The hackle gauge is used for sizing the hackle feathers." +
+                                        " When constructing a fly, there is a direct correlation between the size of the" +
+                                        " hook and the size of the hackle needed. Using a hackle gauge makes obtaining" +
+                                        " these proportions easy and straightforward.");
+                    $('#description').fadeIn('slow');
+                });
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="mainVideo">
+	    <h1>Other Tools</h1>
+        <p id="description">Click on a tool to find out more about it.
+        </p>
+   </div>
+    <aside id="imageAsideVideo">
+	    <img src="../images/miscTools.png" alt="Other Tools" /><br /><br />
+
+        <div class="selectArea whipFinish" id="whipFinish1"></div>
+        <div class="selectArea whipFinish" id="whipFinish2"></div>
+        <div class="selectArea whipFinish" id="whipFinish3"></div>
+        <div class="selectArea hairPacker" id="hairPacker1"></div>
+        <div class="selectArea bodkin" id="bodkin1"></div>
+        <div class="selectArea bodkin" id="bodkin2"></div>
+        <div class="selectArea tweezers" id="tweezers1"></div>
+        <div class="selectArea pliers" id="pliers1"></div>
+        <div class="selectArea pliers" id="pliers2"></div>
+        <div class="selectArea hackleGauge" id="hackleGauge1"></div>
+        <div class="selectArea hackleGauge" id="hackleGauge2"></div>
+    </aside>
+</body>
+</html>
+
+
+
+ 

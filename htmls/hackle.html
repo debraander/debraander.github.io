@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Hackle</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/flies.css" />
+
+</head>
+<body>
+    <img class="mainImage" src="../images/hackle.png" alt="Wings" />
+    <div id="description">
+	    <h1>Hackle</h1>
+        <p>Hackle gives an artificial fly the illusion of life. It is used on most patterns to imitate legs,
+            fluttering wings, or pulsating gills.
+        </p>
+    </div>
+    <div id="main">
+        <div id="tabs">
+            <ul>
+                <li><a href="#palmered">Palmered</a></li>
+                <li><a href="#parachute">Parachute</a></li>
+                <li><a href="#wetFly">Wet Fly</a></li>
+                <li><a href="#dryFly">Dry Fly</a></li>
+            </ul>
+
+            <div id="palmered">
+                <p class="floatParagraph">Palmered hackle is wrapped in an open spiral over body materials
+                    such as floss, chenille, or dubbing. Some flytiers wrap fine copper-wire ribbing over 
+                    palmered hackle for added strength and durability.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/PALHA.mp4" type="video/mp4">
+                    <source src="../videos/PALHA.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+             </div>
+            <div id="parachute">
+               <p class="floatParagraph">Parachute hackle is wrapped horizontally around an upright wing 
+                   of natural or synthetic fibers. Choose stiff, straight rooster neck hackle feathers, as
+                   you would for hackling dry flies.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/PARHA.mp4" type="video/mp4">
+                    <source src="../videos/PARHA.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+             </div>
+            <div id="wetFly">
+               <p class="floatParagraph">Wet-fly hackle must be folded before it is tied on. This way the fibers
+                   angle backward, giving the fly a streamlined shape.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/WETHA.mp4" type="video/mp4">
+                    <source src="../videos/WETHA.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+            <div id="dryFly">
+               <p class="floatParagraph">Dry-fly hackle is wound around the hook shank at the wing position. The
+                   fibers radiate at a right angle to the shank to form the familiar collar.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/DRYHA.mp4" type="video/mp4">
+                    <source src="../videos/DRYHA.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

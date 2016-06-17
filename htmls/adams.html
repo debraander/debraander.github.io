@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - The Adams</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/flies.css" />
+
+</head>
+<body>
+    <img class="mainImage" src="../images/adams.png" alt="The Adams" />
+    <div id="description">
+	    <h1>The Adams</h1>
+        <p>A favorite dry fly in many situations, the Adams is a classic dry pattern.
+        </p>
+    </div>
+    <div id="main">
+        <div id="tabs">
+            <ul>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#tutorial">Tutorial</a></li>
+            </ul>
+
+            <div id="details">
+                <p>The Adams has proven to be an effective imitation of many insects and may well be the most
+                    popular dry fly in North America.
+                </p>
+                <p>Learning to tie the Adams is for all practical purposes, learning to tie a lot of dry flies. The
+                    same procedures, steps, and sequence of steps that create it will create many other dry flies by varying
+                    colors and materials.
+                </p>
+                <p>The Adams is usually fished dead drift, but some twitch it to suggest an active mayfly or caddis.
+                </p>
+            </div>
+            <div id="materials">
+                <ul>
+                    <li>Hook: Mustad 94840; 10-20</li>
+                    <li>Thread: Black 6/0</li>
+                    <li>Wings: Grizzly hen-hackle tips</li>
+                    <li>Tail: Brown and Grizzly hackle fibers, mixed</li>
+                    <li>Body: Gray muskrat dubbing</li>
+                    <li>Hackle: Brown and Grizzly, mixed</li>
+                </ul>
+            </div>
+            <div id="tutorial">
+                <video width="430" height="320" controls>
+                    <source src="http://www.debraander.com/videos/ADAMS.mp4" type="video/mp4" />
+                    <source src="http://www.debraander.com/videos/ADAMS.ogg" type="video/ogg" />
+                    <source src="http://www.debraander.com/videos/ADAMS.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

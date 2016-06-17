@@ -1,0 +1,246 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Checks width and doesn't display background image if < 1250*/
+@media all and (max-width : 1250px) {
+    body {
+        background-color: #333333;
+    }
+}
+
+@media all and (min-width : 1251px) {
+    body {
+        background-image: url("images/lakeBackground.png");
+        -webkit-background-size: cover; /* For WebKit */
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+
+        background-attachment: fixed;
+    }
+}
+
+.fancybox-type-iframe .fancybox-next {
+    right: -65px;
+}
+
+.fancybox-type-iframe .fancybox-prev {
+    left: -65px;
+}
+
+.fancybox-type-iframe .fancybox-nav {
+    width: 65px;       
+}
+
+.fancybox-inner {
+   overflow: hidden !important;
+}
+
+iframe.fancybox-iframe {
+    overflow: hidden !important;
+}
+
+
+@font-face
+{
+    font-family: myFont;
+    src: url(fonts/Archistico_Simple.ttf);
+}
+
+@font-face
+{
+    font-family: myBoldFont;
+    src: url(fonts/Archistico_Bold.ttf);
+}
+
+#main {
+    margin: 10px auto;
+    width: 1210px;
+    background-color: #C2B280;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.4);
+    border: 3px solid #355E3B;
+    overflow-x: hidden;
+    position: relative;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    padding: 6px 20px 4px 15px;
+    border-bottom: 3px solid #355E3B;
+    background-color: ghostwhite;
+    font-family: myBoldFont;
+    font-size: 44px;
+    letter-spacing: 0.02em;
+}
+
+#menu {
+    width:100%;
+    height: 40px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li a, .sectionBorder a {
+    text-decoration: none;
+    font-family: myBoldFont;
+    color: black;
+    position: relative;
+    font-size: 24px;
+}
+
+.backToTop {
+    margin-top: 10px;
+    display: block;
+    padding-right: 25px;
+    width: 300px;
+    float: right;
+    height: 25px;
+    margin-bottom: -10px;
+}
+
+.backToTopLast {
+    margin-top: 10px;
+    display: block;
+    padding-right: 20px;
+    width: 300px;
+    float: right;
+    height: 40px;
+}
+
+.sectionBorder {
+    text-align: right;
+}
+
+a:hover {
+  top:-4px;
+  color: #666666;
+}
+
+li {
+    padding: 0 9px;
+    display: inline-block;
+}
+
+li img {
+    width: 300px;
+    height: 210px;
+    display: block;
+    border: 2px solid white;
+}
+
+#welcome {
+    padding: 40px 60px 20px 60px;
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.welcomeImage {
+    width: 270px;
+    border: 3px solid #333333;
+}
+
+#welcomeImageAside {
+    padding-top: 30px;
+    height: 280px;
+    width: 300px;
+    float: left;
+}
+
+#welcomeHeading {
+    text-align: center;
+    font-family: myBoldFont;
+    font-size: 32px;
+}
+
+#welcomeText {
+    float: right;
+    width: 680px;
+    padding: 0 50px;
+}
+
+#equipment ul, #materialArea ul, #flyArea ul, #stepsArea ul {
+    padding-left: 9.5%;
+    padding-right: 6%;
+}
+
+#equipment, #flyArea, #materialArea, #linksArea, #stepsArea {
+    width: 100%;
+}
+
+.anchorText {
+    margin-top: -10px;
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: myFont;
+    font-size: 40px;
+    padding-left: 25px;
+}
+
+p {
+    width: 70%;
+    padding-left: 15%;
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
+}
+
+#imageDescr {
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 185px;
+}
+
+#home {
+    width: 100%;
+    position: relative;
+}
+
+.bottomBorder {
+    clear: both;
+    border-top: 2px solid #355E3B;
+    border-bottom: 2px solid #355E3B;
+    height: 61px;
+    background-image: url("images/fishGreenBorder.png");
+    width: 100%;
+}
+
+#moreDetails {
+    clear: both;
+    background-color: ghostwhite;
+    border: 2px solid #355E3B;
+    width: 830px;
+    height: 495px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+#detailsHeader {
+    width: 100%;
+    height: 15px;
+    background-color: #B2BEB5;
+    border-bottom: 2px solid #355E3B;
+}
+
+#linksList a {
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    padding-bottom: 6px;
+}
+
+#linksList {
+    padding-left: 7%;
+}

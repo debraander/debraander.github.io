@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Light Cahillr</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/flies.css" />
+
+</head>
+<body>
+    <img class="mainImage" src="../images/cahill.png" alt="Light Cahill" />
+    <div id="description">
+	    <h1>Light Cahill</h1>
+        <p>The Light Cahill is a popular traditional wet-fly pattern. 
+        </p>
+    </div>
+    <div id="main">
+        <div id="tabs">
+            <ul>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#tutorial">Tutorial</a></li>
+            </ul>
+
+            <div id="details">
+                <p>The Light Cahill imitates a number of major midseason mayfly species.
+                </p>
+                <p>The fly's light coloration makes it an ideal pattern for mornings, evenings, or any 
+                    low-light situations.
+                </p>
+            </div>
+            <div id="materials">
+                <ul>
+                    <li>Hook: TMC 3761; 10-16</li>
+                    <li>Thread: Cream 6/0</li>
+                    <li>Tail: Lemon Wood Duck Flank Fibers</li>
+                    <li>Body: Cream Rabbit Dubbing</li>
+                    <li>Hackle: Cream Hen or Rooster Saddle</li>
+                    <li>Wing: Lemon Wood Duck Flank Fibers</li>
+                </ul>
+            </div>
+            <div id="tutorial">
+                <video width="430" height="320" controls>
+                    <source src="../videos/WETFL.mp4" type="video/mp4">
+                    <source src="../videos/WETFL.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Mickey Finn</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js">
+    </script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs({
+                activate: function (event, ui) {
+                    initialize();
+                }
+            });
+        });
+
+        function initialize() {
+            var mapOpt = {
+                center: new google.maps.LatLng(43.6222, -73.5467),
+                zoom: 11,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOpt);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <link rel="stylesheet" href="css/flies.css" />
+
+</head>
+<body>
+    <img class="mainImage" src="../images/mickeyFinn.png" alt="Mickey Finn" />
+    <div id="description">
+	    <h1>Mickey Finn</h1>
+        <p>The Mickey Finn is a classic bucktail streamer.
+        </p>
+    </div>
+    <div id="main">
+        <div id="tabs">
+            <ul>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#tutorial">Tutorial</a></li>
+                <li><a href="#fishIt">Where to Fish</a></li>
+            </ul>
+
+            <div id="details">
+                <p>With the Mickey Finn, you will hand stack and then create
+                    the hair wing of a <em>bucktail</em>. Because a bucktail streamer has hair wings,
+                    it is more durable.
+                </p>
+                <p>The Mickey Finn is an excellent baitfish imitation. The red stripe of bucktail resembles
+                    the lateral line of a small minnow or trout.
+                </p>
+                <p>Swim the Mickey Finn slowly or quickly, gracefully or erratically, deep or shallow in streams
+                    or lakes for almost any game fish: trout, bass, panfish, and even some salt-water species.
+                </p>
+            </div>
+            <div id="materials">
+                <ul>
+                    <li>Hook: Mustad 9672; 2-12</li>
+                    <li>Thread: Black 3/0</li>
+                    <li>Weight: (optional) Fine lead wire</li>
+                    <li>Ribbing: Oval silver tinsel</li>
+                    <li>Body: Flat silver tinsel</li>
+                    <li>Hackle: Yellow and red bucktail, or calf tail</li>
+                </ul>
+            </div>
+            <div id="tutorial">
+                <video width="430" height="320" controls>
+                    <source src="../videos/MICKY.mp4" type="video/mp4">
+                    <source src="../videos/MICKY.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+            <div id="fishIt">
+                <p class="floatParagraph">The fish are always biting in Lake George, NY, and they can't resist the Mickey Finn!
+                </p>
+                <div id="googleMap" style="width:400px; height:320px;"></div>
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>

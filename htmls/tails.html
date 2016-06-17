@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Tails</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/flies.css" />
+
+</head>
+<body>
+    <img class="mainImage" src="../images/tails.png" alt="Tails" />
+    <div id="description">
+	    <h1>Tails</h1>
+        <p>Most artificial flies just don't look right without a tail; after all, the majority of the naturals you are imitating
+            have a tail of some type.
+        </p>
+    </div>
+    <div id="main">
+        <div id="tabs">
+            <ul>
+                <li><a href="#hackleFiber">Hackle-Fiber</a></li>
+                <li><a href="#hair">Hair</a></li>
+                <li><a href="#marabou">Marabou</a></li>
+                <li><a href="#biot">Biot</a></li>
+            </ul>
+
+            <div id="hackleFiber">
+                <p class="floatParagraph">Tails of this type are now the most common. Hackle-fiber tails are made from
+                    rooster or hen hackle and resemble a natural insect tail.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/HACTA.mp4" type="video/mp4">
+                    <source src="../videos/HACTA.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+           </div>
+            <div id="hair">
+                <p class="floatParagraph">Hair tails are used on many dry-fly patterns. Beginning flytiers should
+                    practice making hair tails using calf or elk hair; deer hair tends to flare around the hook shank. 
+                    You will need a hair stacker for aligning the tips.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/HAITA.mp4" type="video/mp4">
+                    <source src="../videos/HAITA.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+             </div>
+            <div id="marabou">
+               <p class="floatParagraph">Marabou tails seem to breathe and pulsate under water, giving almost any 
+                   pattern a lifelike appearance.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/MARBO.mp4" type="video/mp4">
+                    <source src="../videos/MARBO.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+             </div>
+            <div id="biot">
+               <p class="floatParagraph">Biot tails are generally shorter than other types of tails and are tied in
+                   with a different technique. Biots can also be used as a substitute for hackle-fiber tail on many 
+                   nymphs and wet flies.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/BIOTA.mp4" type="video/mp4">
+                    <source src="../videos/BIOTA.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

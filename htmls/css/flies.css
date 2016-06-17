@@ -1,0 +1,77 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 600px;
+    background-image: url("../../images/innerBackground.png");
+}
+
+@font-face
+{
+    font-family: myFont;
+    src: url(../../fonts/Archistico_Simple.ttf);
+}
+
+@font-face
+{
+    font-family: myBoldFont;
+    src: url(../../fonts/Archistico_Bold.ttf);
+}
+
+h1 {
+    font-family: myFont;
+    font-size: 30px;
+}
+
+.mainImage {
+    float: left;
+    width: 195px;
+    border: 3px solid white;
+    margin: 15px 0 15px 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.floatParagraph {
+    float: left;
+    width: 270px;
+}
+
+#description {
+    float: right;
+    width: 537px;
+    padding: 0 20px;
+}
+
+#googleMap {
+    float: right;
+    margin-left: 20px;
+}
+
+#main {
+    clear: both;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+p {
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 14px;
+}
+
+#tabs {
+    height: 390px;
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
+}
+
+/*#googleMap {
+    height: 320px;
+}*/

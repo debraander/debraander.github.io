@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Hooks</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="css/basic.css" />
+
+    <script>
+        $(document).ready(function () {
+            $("#stylesImage").bind("mouseout", function (e) {
+                $('#hookCaption').css("display", "none");
+            });
+
+            $("#stylesImage").bind("mousemove", function (e) {
+                    var offset = $("#stylesImage").offset();
+                var clickX = e.clientX - offset.left;
+                var clickY = e.clientY - offset.top;
+
+                var xOffset = 570,
+                    yOffset = 20;
+
+                if ((clickX > 13 && clickX < 46) && (clickY > 10 && clickY < 61)) {
+                    $('#hookCaption').text("Standard Dry Fly");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 50 && clickX < 83) && (clickY > 8 && clickY < 71)) {
+                    $('#hookCaption').text("Swimming-Nymph");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 93 && clickX < 128) && (clickY > 8 && clickY < 72)) {
+                    $('#hookCaption').text("Straight-eye");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 133 && clickX < 156) && (clickY > 4 && clickY < 75)) {
+                    $('#hookCaption').text("Flat-bodied Nymph");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 169 && clickX < 218) && (clickY > 3 && clickY < 219)) {
+                    $('#hookCaption').text("Carrie Stevens 10x Long Streamer");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 18 && clickX < 50) && (clickY > 81 && clickY < 125)) {
+                    $('#hookCaption').text("Caddis Pupa");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 63 && clickX < 96) && (clickY > 79 && clickY < 121)) {
+                    $('#hookCaption').text("5X short with Turned-up Eye");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 13 && clickX < 54) && (clickY > 138 && clickY < 211)) {
+                    $('#hookCaption').text("Stinger Nymph");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 65 && clickX < 105) && (clickY > 130 && clickY < 215)) {
+                    $('#hookCaption').text("Streamer with Turned-up Eye");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else if ((clickX > 115 && clickX < 157) && (clickY > 101 && clickY < 213)) {
+                    $('#hookCaption').text("Streamer with Turned-down Eye");
+                    $('#hookCaption').css({ "top": clickY + yOffset + "px", "left": clickX + xOffset + "px" });
+                    $('#hookCaption').css("display", "block");
+                }
+                else {
+                    $('#hookCaption').css("display", "none");
+                }
+            });
+        });
+    </script>
+    <style>
+        #hookCaption {
+            position: absolute;
+            border: 1px solid #333333;
+            background-color: white;
+            color: black;
+            padding: 2px 4px;
+            display: none;
+            font-family: Georgia, Arial, sans-serif;
+            font-size: 11px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+	    <h1>Hooks</h1>
+        <p>The hook is the foundation of any fly pattern. In most cases, the novice flytier need only be 
+            concerned with two hook styles: the dry-fly and wet-fly.
+        </p>
+        <p>Hooks for dry flies are made with light-gauge wire to help them float on the surface. Wet-fly hooks,
+            which include streamer and nymph hooks, are generally heavier to help them sink quickly.
+        </p>
+        <p>The size, length, wire and shape of a hook all determine how the finished pattern will look and 
+            behave on or in the water.
+        </p>
+        <p>Move the mouse over the hook styles to see their names.</p>
+    </div>
+    <aside id="imageAside">
+	    <img id= "stylesImage" src="../images/hookStyles.png" alt="Hook Styles" />
+        <div class="imageTitle">Popular Hook Styles</div>
+	    <img src="../images/hookDiagram.png" alt="Hook Diagram" />
+        <div class="imageTitle">Parts of a Hook</div>
+
+    </aside>
+    <div id="hookCaption">Some text</div>
+</body>
+</html>

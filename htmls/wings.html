@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>fancyBox - Wings</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <link rel="stylesheet" href="css/flies.css" />
+
+</head>
+<body>
+    <img class="mainImage" src="../images/wings.png" alt="Wings" />
+    <div id="description">
+	    <h1>Wings</h1>
+        <p>Wings imitate the profile of a natural insect. They also slow the dry fly's descent so it 
+            settles gently to the surface. They add color and action to wet flies and streamers.
+        </p>
+    </div>
+    <div id="main">
+        <div id="tabs">
+            <ul>
+                <li><a href="#hacklePoint">Hackle Point</a></li>
+                <li><a href="#hair">Hair</a></li>
+                <li><a href="#quill">Quill</a></li>
+                <li><a href="#parachute">Parachute</a></li>
+            </ul>
+
+            <div id="hacklePoint">
+                <p class="floatParagraph">Hackle-point wings are made from the tips, or points, of a hackle feather.
+                    They produce a realistic wing profile, but add very little weight to the finished fly.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/HACPO.mp4" type="video/mp4">
+                    <source src="../videos/HACPO.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+             </div>
+            <div id="hair">
+               <p class="floatParagraph">Hair wings are usually made of deer, calf, or elk hair, or a synthetic
+                   substitute. These wings are durable, buoyant, and are easy to see on the surface of the water.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/HAWUD.mp4" type="video/mp4">
+                    <source src="../videos/HAWUD.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+             </div>
+            <div id="quill">
+               <p class="floatParagraph">Tent-style wings are made with a folded quill segment, tied in over the 
+                   back to mimic the folded wings of an adult insect.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/QUWITENT.mp4" type="video/mp4">
+                    <source src="../videos/QUWITENT.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+            <div id="parachute">
+               <p class="floatParagraph">Used only on surface patterns, the parachute-style wing forms the base
+                   around which the hackle is wrapped horizontally. This wing-and-hackle combination causes the
+                   fly to settle slowly to the water, like a parachute.
+                </p>
+                <video width="430" height="320" controls>
+                    <source src="../videos/PARWI.mp4" type="video/mp4">
+                    <source src="../videos/PARWI.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

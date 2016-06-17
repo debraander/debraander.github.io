@@ -1,0 +1,92 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 500px;
+    background-image: url("../../images/innerBackground.png");
+}
+
+@font-face
+{
+    font-family: myFont;
+    src: url(../../fonts/Archistico_Simple.ttf);
+}
+
+@font-face
+{
+    font-family: myBoldFont;
+    src: url(../../fonts/Archistico_Bold.ttf);
+}
+
+#main {
+    float: left;
+    width: 535px;
+}
+
+#mainVideo {
+    float: left;
+    width: 458px;
+}
+
+#imageAsideVideo {
+    margin: 20px;
+    float: right;
+    text-align: center;
+    width: 302px;
+    height: 100%;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+.footerImage {
+    width: 125px;
+}
+
+#springScissors {
+    width: 175px;
+    border: 1px solid #333333;
+}
+
+h1 {
+    font-family: myFont;
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+p {
+    margin: 20px;
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.imageTitle {
+    margin-bottom: 20px;
+}
+
+#imageAsideVideo img {
+    width: 300px;
+    border: 2px solid white;
+    position: relative;
+}
+
+#imageAside img {
+    width: 223px;
+    border: 2px solid white;
+}
+
+#imageAside {
+    margin: 20px;
+    float: right;
+    text-align: center;
+    width: 225px;
+    height: 100%;
+    display: block;
+}
+
+iframe.fancybox-iframe {
+    overflow:hidden;
+}
