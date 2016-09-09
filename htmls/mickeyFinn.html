@@ -17,7 +17,7 @@
         $(function () {
             $("#tabs").tabs({
                 activate: function (event, ui) {
-                    initialize();
+                   // initialize();
                 }
             });
         });
@@ -31,7 +31,7 @@
             var map = new google.maps.Map(document.getElementById("googleMap"), mapOpt);
         }
 
-        google.maps.event.addDomListener(window, 'load', initialize);
+        //google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 
     <link rel="stylesheet" href="css/flies.css" />
@@ -50,7 +50,7 @@
                 <li><a href="#details">Details</a></li>
                 <li><a href="#materials">Materials</a></li>
                 <li><a href="#tutorial">Tutorial</a></li>
-                <li><a href="#fishIt">Where to Fish</a></li>
+                <!--<li><a href="#fishIt">Where to Fish</a></li>-->
             </ul>
 
             <div id="details">
@@ -82,11 +82,11 @@
                     Your browser does not support the video tag.
                 </video> 
             </div>
-            <div id="fishIt">
+            <!--<div id="fishIt">
                 <p class="floatParagraph">The fish are always biting in Lake George, NY, and they can't resist the Mickey Finn!
                 </p>
                 <div id="googleMap" style="width:400px; height:320px;"></div>
-             </div>
+             </div>-->
         </div>
     </div>
 
