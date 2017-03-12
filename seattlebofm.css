@@ -6,8 +6,8 @@
     background-color: #708090;
 }
 
-/*/*Checks width and doesn't display background image if < 1250*/
-@media all and (max-width : 1250px) {
+/*Checks width and doesn't display background image if < 1250*/
+/*@media all and (max-width : 1250px) {
     body {
         margin: 20px;
         padding: 0;
