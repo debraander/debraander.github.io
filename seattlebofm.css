@@ -6,7 +6,7 @@
     background-color: #708090;
 }
 
-/*Checks width and doesn't display background image if < 1250*/
+/*/*Checks width and doesn't display background image if < 1250*/
 @media all and (max-width : 1250px) {
     body {
         margin: 20px;
@@ -14,7 +14,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: #708090;
     }
-}
+}*/
 
 /*@media all and (min-width : 1251px) {
     body {
