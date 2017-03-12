@@ -82,7 +82,7 @@ header {
     font-family: myBoldFont;
     font-size: 44px;
     height: 75px;
-    letter-spacing: 0.02em;
+    /*letter-spacing: 0.02em;*/
 }
 
 #menu {
