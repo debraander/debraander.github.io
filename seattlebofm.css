@@ -72,7 +72,7 @@ iframe.fancybox-iframe {
     height: auto;
 }
 
-header {
+#bofmHeader {
     width: 100%;
     padding: 6px 20px 4px 15px;
     border-bottom: 3px solid black;/* #355E3B; */
@@ -82,6 +82,7 @@ header {
     font-family: myBoldFont;
     font-size: 44px;
     height: 75px;
+    line-height: normal;
     /*letter-spacing: 0.02em;*/
 }
 
